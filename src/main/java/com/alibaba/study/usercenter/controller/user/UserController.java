@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 /**
  * @Author: wjy
  * @Date: 2020/1/2 16:35
@@ -21,5 +23,12 @@ public class UserController {
     @GetMapping("{id}")
     public User findUserById(@PathVariable Integer id){
         return userService.findUserById(id);
+    }
+
+
+    //测试方法：q?id=1&wxId=aaa
+    @GetMapping("q")
+    public User queryUser(User user){
+        return user;
     }
 }
