@@ -1,4 +1,4 @@
-package com.alibaba.study.contentcenter.domain.messageing;
+package com.alibaba.study.usercenter.domain.dto.messaging;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
